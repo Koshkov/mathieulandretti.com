@@ -63,5 +63,4 @@ As an information professional, I dislike many aspects modern copyright law. I
 find it far too restrictive, and I believe that anything that limits access 
 to information to be counter-productive.
 
-If people are able to make money off of my work, I think that's great!
-
+If people are able to make money off of my work, I think that's great! Isn't it?
