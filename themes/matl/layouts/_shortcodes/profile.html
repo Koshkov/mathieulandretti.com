@@ -1,0 +1,11 @@
+<section class="profile-card">
+	{{ with .Get "src" }}
+		<img class="profile-image" src="{{ . }}"/>
+	{{ end }}
+	<section class="profile-summary">
+		{{ with .Get "title" }}
+			<h2>{{ . }}</h2>
+		{{ end }}
+		{{ .Inner }}
+	</section>
+</section>

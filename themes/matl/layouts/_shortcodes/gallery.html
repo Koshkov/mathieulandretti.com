@@ -1,0 +1,16 @@
+<section class="photo-gallery">
+	{{ range $.Site.Data.photos}}
+		<a class="nodec" target="_blank" href="https://commons.wikimedia.org/wiki/File:{{ .uri }}">
+			<section class="photo-card">
+				<img loading="lazy" 
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/{{ slicestr .src 0 1 }}/{{ .src }}/{{ .uri }}/500px-{{ .uri }}"/>
+				<section class="photo-card-caption">
+					<span class="photo-icon">
+						<span class="material-icons">Photo_Camera</span>
+					</span>
+					{{ .cap }}
+				</section>
+			</section>
+		</a>
+	{{ end }}
+</section>

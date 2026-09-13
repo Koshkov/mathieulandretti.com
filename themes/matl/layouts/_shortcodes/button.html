@@ -1,0 +1,16 @@
+<div class="btn">
+{{ with .Get "url" }}
+<a target="_blank" href="{{ . }}">
+{{ end }}
+	<div class="btn-icon">
+		{{ with .Get "icon" }}
+		<span class="material-icons">{{ . }}</span>
+		{{ end }}
+	</div>
+	<div class="btn-text">
+	{{ with .Get "text" }}
+	{{ . }}
+	{{ end }}
+	</div>
+</a>
+</div>

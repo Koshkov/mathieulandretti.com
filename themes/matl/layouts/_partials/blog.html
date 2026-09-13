@@ -1,0 +1,13 @@
+<section class="post-gallery">
+  	{{ range site.RegularPages }}
+		<section class="post-summary">
+			<div class="post-summary-header">
+				<a href="{{ .RelPermalink }}"><h2>{{ .LinkTitle }}</h2></a>
+			</div>
+			<div class="post-summary-text">
+				{{ .Summary }}
+				{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+			</div>
+		</section>
+  {{ end }}
+</section>

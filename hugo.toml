@@ -1,0 +1,12 @@
+baseURL = 'https://mathieulandretti.com/'
+languageCode = 'en-us'
+title = 'Mathieu Landretti'
+theme = 'matl'
+
+[security]
+  enableInlineShortcodes = true
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'
